@@ -1,21 +1,21 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation'; 
 import styles from './SearchInput.module.css';
 
 interface SearchInputProps {
-  searchValue: string; // Принимаем значение searchValue из родительского компонента
+  searchValue: string; 
 }
 
 export const SearchInput: React.FC<SearchInputProps> = ({ searchValue }) => {
   const router = useRouter();
 
-  const [search, setSearch] = useState<string>(searchValue); // Используем searchValue для инициализации состояния search
+  const [search, setSearch] = useState<string>(searchValue); 
   const [timer, setTimer] = useState<number | null>(null);
 
   useEffect(() => {
-    setSearch(searchValue); // Обновляем search при изменении searchValue из props
+    setSearch(searchValue); 
   }, [searchValue]);
 
   const handleInputChange = (value: string) => {
@@ -27,14 +27,18 @@ export const SearchInput: React.FC<SearchInputProps> = ({ searchValue }) => {
 
     setTimer(
       window.setTimeout(() => {
-        router.push(`/search/${encodeURIComponent(value)}`);
+        if (value.trim() !== '') {
+          router.push(`/search/${value}`);
+        } else {
+          router.push('/');
+        }
       }, 300)
     );
   };
 
   const handleClearClick = () => {
     setSearch('');
-    router.push('/search');
+    router.push('/'); 
   };
 
   return (

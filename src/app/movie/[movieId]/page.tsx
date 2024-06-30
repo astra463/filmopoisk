@@ -11,9 +11,9 @@ async function getData(movieId: string) {
   return res.json()
 }
 
-export const MoviePage = async () => {
+export const MoviePage = async ({params}:any) => {
 
-  const {id, title, description, genre, release_year, rating, poster, total_rates_count, actors} = await getData("43")
+  const {id, title, description, genre, release_year, rating, poster, total_rates_count, actors} = await getData(params.movieId)
   
 	return (
     <div className={styles.page}>

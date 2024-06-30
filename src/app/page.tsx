@@ -18,14 +18,13 @@ const HomePage: React.FC = async () => {
 
   const {search_result, total_pages} = await getInitialData()
 
- 
   return (
     <main className="page">
       <div className="page__left">
         <Filter/>
       </div>
       <div className="page__right">
-        <SearchInput />
+        <SearchInput searchValue={''}/>
         <MovieList movies={search_result} total_pages={total_pages}/>
       </div>
     </main>

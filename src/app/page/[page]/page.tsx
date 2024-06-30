@@ -1,6 +1,7 @@
 import React from 'react';
 import Filter from '../../../components/Filter/Filter';
 import MovieList from '../../../components/MovieList/MovieList';
+import "../../../app/styles.css";
 
 async function getMoviesByGenre(page: number) {
   const res = await fetch(`http://localhost:3030/api/v1/search?page=${page}`)
