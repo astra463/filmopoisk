@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  background: var(--main-bg-color);
+  border-radius: 8px;
+  width: 400px;
+  cursor: pointer;
+}
+
+.input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--main-text-color);
+  border: none;
+  font-family: 'Inter';
+  background-color: transparent;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--input-color);
+  font-family: 'Inter';
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+.clearButton {
+  background-image: url('../../assets/images/clear_input.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  width: 16px;
+  height: 16px;
+  color: var(--main-text-color);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  line-height: 1;
+}

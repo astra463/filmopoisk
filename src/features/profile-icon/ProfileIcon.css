@@ -1,0 +1,18 @@
+.profile-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--main-bg-color);
+  border-radius: 50%;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

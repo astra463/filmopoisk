@@ -1,0 +1,43 @@
+.page {
+  margin: 20px 32px;
+}
+
+.actorsList {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.actorPhoto {
+  width: 160px;
+  height: 228px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.actorName {
+  margin: 0;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--main-text-color);
+}

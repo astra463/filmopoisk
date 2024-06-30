@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-bg-color);
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.logout {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}

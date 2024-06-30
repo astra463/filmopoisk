@@ -1,0 +1,84 @@
+.selectContainer {
+  position: relative;
+  width: 100%;
+}
+
+.selectHeader {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: var(--main-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--input-color);
+}
+
+.selectHeader:first-child {
+  margin-bottom: 16px;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.selectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  padding: 0px;
+  border: 1px solid var(--main-bg-color);
+  box-shadow: 0px 10px 22px -4px rgba(27, 31, 35, 0.12);
+  border-radius: 8px;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent; 
+}
+
+.selectList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.selectList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.selectList::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.selectList::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.selectOption {
+  padding: 12px 12px 10px 12px;
+  border-radius: 8px;
+  font-family: 'SF Pro Text';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.selectOption:hover {
+  background-color: #f1f1f1;
+}
