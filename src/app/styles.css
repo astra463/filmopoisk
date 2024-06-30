@@ -1,0 +1,14 @@
+.page {
+  display: flex;
+  gap: 24px;
+  padding: 20px 20px;
+  background-color: var(--page-bg-color);
+}
+
+.page__left {
+  
+}
+
+.page__right {
+  width: 100%;
+}

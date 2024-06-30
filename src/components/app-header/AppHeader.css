@@ -1,0 +1,23 @@
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 32px;
+  background-color: var(--main-color);
+  top: 0;
+  z-index: 1000;
+}
+
+.header__user {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__logo-link {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--main-bg-color);
+  text-decoration: none;
+}
