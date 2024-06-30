@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Неделя React...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Краткое введение
 
-Currently, two official plugins are available:
+Этот репозиторий содержит две ветки:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **main**: Реализовано на React, Redux и RTK Query.
+- **next**: Миграция на Next.js. 
 
-## Expanding the ESLint configuration
+Это мой первый проект на Next.js, и я вложил в него много усилий. Уверен, что ты меня понимаешь... В ветке main реализован весь функционал, а на ветке next - почти весь.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Я буду признателен за любые отзывы и предложения! В последний момент я допустил небольшую ошибку с pull request, и его сейчас нет. Поэтому, если возникнут любые вопросы, пожалуйста, пиши мне в телеграм @shilov_se, я с радостью предоставлю любые комментарии по проекту.
 
-- Configure the top-level `parserOptions` property like this:
+Заранее благодарю за понимание и поддержку! Удачи! 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Запуск проекта
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Запуск на ветке main
+
+1. Если хочешь склонировать только main ветку, используй команду:
+
+   ```bash
+   git clone --branch main https://github.com/astra463/filmopoisk.git
+   ```
+
+2. Если хочешь склонировать только next ветку, используй команду:
+
+   ```bash
+   git clone --branch next https://github.com/astra463/filmopoisk.git
+   ```
+
+3. Далее перейди в директорию проекта и установи зависимости:
+
+  ```bash
+  cd <имя-проекта>
+  npm install
+  ```
+
+4. Запусти проект
+
+  ```bash
+  npm run dev
+  ```
+
