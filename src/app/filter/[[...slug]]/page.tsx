@@ -2,6 +2,7 @@ import React from 'react';
 import Filter from '../../../components/Filter/Filter';
 import MovieList from '../../../components/MovieList/MovieList';
 import "../../../app/styles.css";
+import { SearchInput } from '../../../components/search-input';
 
 async function getMoviesByYearAndGenre(genre: string, year: string) {
   const res = await fetch(`http://localhost:3030/api/v1/search?genre=${genre}&release_year=${year}`);
@@ -48,6 +49,7 @@ const HomePage = async ({ params }: { params: { slug: string[] } }) => {
         <Filter />
       </div>
       <div className="page__right">
+        <SearchInput searchValue={''}/>
         <MovieList movies={search_result} total_pages={total_pages} />
       </div>
     </main>

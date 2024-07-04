@@ -2,6 +2,7 @@ import React from 'react';
 import Filter from '../../../components/Filter/Filter';
 import MovieList from '../../../components/MovieList/MovieList';
 import "../../../app/styles.css";
+import { SearchInput } from '../../../components/search-input';
 
 async function getMoviesByGenre(page: number) {
   const res = await fetch(`http://localhost:3030/api/v1/search?page=${page}`)
@@ -22,8 +23,8 @@ const HomePage: React.FC = async ({params}: any) => {
         <Filter/>
       </div>
       <div className="page__right">
-        {/* <SearchInput searchQuery={currentTitle} setSearchQuery={setCurrentTitle} /> */}
-        <MovieList movies={search_result} total_pages={total_pages}/>
+      <SearchInput searchValue={''}/>
+      <MovieList movies={search_result} total_pages={total_pages}/>
       </div>
     </main>
   );
